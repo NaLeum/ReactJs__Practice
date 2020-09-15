@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import Counter from './Counter';
 import Info from './Info';
+import ReducerCounter from './ReducerCounter';
+import ReducerInfo from './ReducerInfo';
 
 const App= () => {
   const [visible,setVisible] = useState(false);
@@ -16,6 +18,9 @@ const App= () => {
      </button>
      <hr/>
      {visible&&<Info />}
+
+     <ReducerCounter />
+     <ReducerInfo />
     </>
   );
 }
