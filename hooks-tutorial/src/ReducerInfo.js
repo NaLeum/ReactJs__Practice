@@ -5,7 +5,7 @@ import React, { useReducer } from 'react';
 function reducer(state,action){
     return {
         ...state,
-        [action.name]:action.value
+        [action.name]:action.value // 리듀서의 액션으로 넘어온 이벤트타겟의 name값과 value값을 얻오 state에 추가한다.
     };
 }
 
@@ -16,7 +16,7 @@ const ReducerInfo = () => {
     });
     const {name, nickname} = state;
     const onChange = e => {
-        dispatch(e.target);
+        dispatch(e.target); //이벤트 타겟을 리듀서의 액션으로 넘겨준다
     }
 
     return(
