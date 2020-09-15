@@ -21,6 +21,8 @@ const ReducerInfo = () => {
 
     return(
         <div>
+                    <br/>
+
             <div>
                 <input name='name' value={name} onChange={onChange} />
                 <input name='nickname' value={nickname} onChange={onChange} />
