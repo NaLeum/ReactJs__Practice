@@ -6,6 +6,8 @@ import ReducerCounter from './ReducerCounter';
 import ReducerInfo from './ReducerInfo';
 import Average from './Average';
 import MemoAverage from './MemoAverage';
+import RefAverage from './RefAverage';
+import InputsInfo from './InputsInfo';
 
 const App= () => {
   const [visible,setVisible] = useState(false);
@@ -25,6 +27,8 @@ const App= () => {
      <ReducerInfo />
      <Average />
      <MemoAverage />
+     <RefAverage />
+     <InputsInfo />
     </>
   );
 }
