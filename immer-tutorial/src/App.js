@@ -37,7 +37,7 @@ const App = () => {
       //   array: data.array.concat(info),
       // });
       setData(
-        produce((draft) => {
+        produce((form, draft) => {
           draft.array.push(info);
         }),
       );
@@ -58,7 +58,7 @@ const App = () => {
     //   array: data.array.filter((info) => info.id !== id),
     // });
     setData(
-      produce((draft) => {
+      produce((form, draft) => {
         draft.array.splice(
           draft.array.findIndex((info) => info.id === id),
           1,
