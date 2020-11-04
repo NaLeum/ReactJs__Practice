@@ -74,7 +74,7 @@ const listener = () => {
 }
 
 // 구독
-const unsubscribe = store.subscribe(listener);
+// const unsubscribe = store.subscribe(listener);
 // 구독해지
 // unsubscribe();
 
